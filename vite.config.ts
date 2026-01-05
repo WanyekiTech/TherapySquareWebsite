@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: '/TherapySquareWebsite/',
+    // base: '/TherapySquareWebsite/', // Removed for S3 deployment (serves from root)
     server: {
       port: 3000,
       host: '0.0.0.0',
